@@ -1,0 +1,10 @@
+<view class="top">
+  <view class="left">
+    <image src="cloud://mini-rbrul.6d69-mini-rbrul-1302317498/liZhi/img/index/logo.png"></image>
+    <view class="warp-txt">  
+      <text class="txt">荔枝</text>
+      <text class="txt">超两亿年轻用户都在玩的声音APP</text>
+    </view>
+  </view>
+  <view class="rig">下载App</view> 
+</view>

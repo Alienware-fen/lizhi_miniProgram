@@ -1,0 +1,2 @@
+@import '../../components/header/header.wxss';
+@import '../../template/pageContent/pageContent.wxss';

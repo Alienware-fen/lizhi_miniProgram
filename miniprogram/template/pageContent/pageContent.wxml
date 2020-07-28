@@ -1,0 +1,29 @@
+<import src="../content/content"></import>
+<import src="../details/details"></import>
+
+<template name="mainContent">
+  <view class="title">
+    <view>
+      <navigator url="../../pages/index/index">
+        <image src="cloud://mini-rbrul.6d69-mini-rbrul-1302317498/liZhi/img/emotion/home.png"></image>
+      </navigator>
+    </view>
+    <view><text>{{title}}</text></view>
+    <view></view>
+  </view>
+  <view class="content">
+    <view class="top">
+        <scroll-view class="scroll-view_H" scroll-x="true">
+          <view class="scroll-view-item_H" wx:for="{{listAll}}" wx:key="index" bindtap="changeIndex" data-index="{{ index }}">
+              <text class='text {{index == indexTitle?"active":""}}'>{{ item }}</text>
+          </view>
+        </scroll-view>
+    </view>
+    <view class="con" wx:for="{{listAll}}" wx:key="index">
+        <view wx:if="{{index == indexTitle}}" >
+          <template is="{{index == 0?'content':''}}" data="{{ListAll,index}}"></template>
+          <template is="{{index !=0?'details':''}}" data="{{threeList,index,colorIndex}}"></template>
+        </view>
+    </view>
+  </view>
+</template>

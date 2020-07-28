@@ -1,0 +1,53 @@
+/* template/details/details.wxss */
+.tab {
+  width: 750rpx;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+.tab .warp-txt{
+  margin: auto 0px;
+}
+.tab text{
+  color: rgb(0,0,0,0.3);
+  font-size: 24rpx;
+  padding:0px 10px;
+}
+.tab text:nth-of-type(1),
+.tab text:nth-of-type(2){
+  border-right: 1px solid  rgb(0,0,0,0.3);
+}
+.tab .active{
+  color:#FE5353;
+}
+
+.warp-item {
+  width: 750rpx;
+  display: flex;
+  padding-left:10px;
+  box-sizing: border-box;
+  justify-content: left;
+}
+
+.warp-img image{
+  width: 150rpx;
+  height:150rpx;
+  border-radius: 10px;
+}
+
+.warp-item .warp-top text{
+  color: rgb(0,0,0,0.8);
+  font-size: 24rpx;
+}
+
+.warp-item .warp-center text{
+  color: rgb(0,0,0,0.5);
+  padding:0px 5px;
+  font-size: 21rpx;
+}
+
+.warp-item .warp-num text{
+  color: rgb(0,0,0,0.3);
+  padding:0px 5px;
+  font-size: 18rpx;
+}

@@ -1,0 +1,40 @@
+@import '../../template/content/content.wxss';
+.listen{
+  margin:50rpx;
+}
+.warp-nav{
+  display: flex;
+  justify-content:left;
+  flex-wrap: wrap;
+}
+.warp-nav .warp-item{
+  width: 150rpx;
+  height:150rpx;
+  text-align: center;
+}
+.warp-item>image{
+  width: 100rpx;
+  height: 71rpx;
+}
+.warp-item text{
+  font-size: 24rpx;
+  color:rgb(0,0,0,0.7)
+}
+
+.show {
+  text-align: center;
+  display: inline-block;
+}
+.show>image{
+  width: 75rpx;
+  height: 70rpx;
+}
+.show text{
+  font-size: 24rpx;
+  color:rgb(0,0,0,0.7)
+}
+
+
+
+
+

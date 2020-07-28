@@ -1,0 +1,25 @@
+<template name="content" wx:for="{{ListAll}}" wx:key="index">
+  <view class="top">
+    <text>{{ListAll[index].title}}</text>
+    <image src="cloud://mini-rbrul.6d69-mini-rbrul-1302317498/liZhi/img/index/right.png"></image>
+  </view>
+  <view class="bottom">
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <view class="scroll-view-item_H warp-item" wx:for="{{ListAll[index].list}}" wx:key="index">
+          <view class="warp-img">
+            <image src="{{item.src}}"></image>
+            <image src="{{num == item.id?plaingSrc:playSrc}}" class="warp-position" bindtap="changeImg" data-active="{{item.id}}"></image>
+            <image src="{{item.smaPlay}}" class="numPic"></image>
+            <text class="numText">{{item.num}}</text>
+          </view>
+          <view class="warp-txt">
+            <text>{{item.text}}</text>
+          </view>
+      </view>
+    </scroll-view>
+
+   
+  </view>
+
+</template>
+

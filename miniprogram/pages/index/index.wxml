@@ -1,0 +1,20 @@
+<import src="../../template/content/content.wxml"></import>
+
+<header></header>
+<view class="center">
+  <view class="listen">听世界</view>
+  <view class="warp-nav">
+    <view wx:for="{{showList}}" wx:key="index" class="warp-item" bindtap="changePage" data-item="{{item.name}}"> 
+      <image src="{{item.src}}"></image>
+      <view><text>{{item.name}}</text></view>
+    </view>
+    <view bindtap="showAll"   class="show">
+      <image src="{{msgSrc}}"></image>
+      <view><text>{{msgTxt}}</text></view>
+    </view>
+  </view>
+</view>
+
+<view class="con">
+  <template is="content" data="{{ListAll,playSrc,plaingSrc,activeIndex,num,index}}" wx:for="{{ListAll}}" wx:key="index"></template>
+</view>

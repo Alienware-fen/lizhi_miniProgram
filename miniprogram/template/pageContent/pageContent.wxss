@@ -1,0 +1,36 @@
+@import '../../components/header/header.wxss';
+@import '../content/content.wxss';
+@import '../details/details.wxss';
+.title{
+  width: 750rpx;
+  display: flex;
+  padding:10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  text-align: center;
+}
+.title image{
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.content .top .scroll-view_H{
+  white-space: nowrap;
+  width: 100%
+}
+
+.content .top {
+  box-shadow: 0 2px 4px 0 transparent;
+}
+.content .top .scroll-view-item_H{
+  display: inline-block;
+}
+.content .top .text{
+  margin:0px 30rpx;
+  color: rgba(0,0,0,.3);
+  font-size: 24rpx;
+}
+
+.content .top .active{
+  color: #000;
+}

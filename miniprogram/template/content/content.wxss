@@ -1,0 +1,79 @@
+/* template/content/content.wxss */
+.top{
+  width: 750rpx;
+  display: flex;
+  justify-content: space-between;
+  padding:24rpx 30rpx;
+  box-sizing: border-box;
+
+}
+.top text{
+  color:#333;
+  font-size: 31rpx;
+  font-weight: bold;
+  margin:auto 0px
+}
+.top image{
+  width: 21px;
+  height: 34px;
+  margin:auo 0px;
+  transform: scale(0.4);
+}
+
+
+.scroll-view_H{
+  white-space: nowrap;
+  width: 750rpx;
+}
+
+.scroll-view-item_H{
+  display: inline-block;
+  width: 230rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  margin:3rpx;
+  /* background-color: red; */
+}
+.bottom{
+  width: 750rpx;
+}
+.bottom .warp-img>image{
+  width: 190rpx;
+  height: 142.5rpx;
+}
+
+.bottom .warp-txt>text{
+  width: 187rpx; 
+  display: inline-block;
+  color: #333;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bottom .warp-img{
+  position: relative;
+  text-align: center
+}
+.bottom .warp-position{
+  position: absolute;
+  top: 0px;
+  left:0px;
+  transform:scale(0.4)
+}
+.bottom .numPic{
+  position: absolute;
+  bottom: -18px;
+  left: -30px;
+  transform: scale(0.2);
+}
+.bottom .numText{
+  position: absolute;
+  color: white;
+  bottom: 5px;
+  left: 20px;
+}
+
+
+
+

@@ -1,0 +1,32 @@
+<!--template/details/details.wxml-->
+<template name="details">
+  <view class="tab">
+    <view class="warp-txt">
+      <text wx:for="{{threeList}}" wx:key="index"  data-index="{{ index }}" bindtap="changeColor" class='{{index == colorIndex?"active":""}}'>{{threeList[index].title}}</text>
+    </view>
+  </view>
+  <view class="con" wx:for="{{threeList}}" wx:key="index">
+ 
+      <view wx:if="{{index == colorIndex}}">
+        <view class="warp-item" wx:for="{{item.list}}" wx:key="index">
+        <view class="warp-img">
+          <image src="{{item.src}}"></image>
+        </view>
+          <view class="warp-word">
+            <view class="warp-top">  
+              <text>{{item.text}}</text>
+            </view>
+            <view class="warp-center">  
+              <text>{{item.author}}</text>
+            </view>
+            <view class="warp-num">
+              <text>{{item.timer}}</text>
+              <text>{{item.look}}</text>
+              <text>{{item.write}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</template>
+

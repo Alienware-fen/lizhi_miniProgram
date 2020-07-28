@@ -1,0 +1,35 @@
+.top{
+  display: flex;
+  padding:10px ;
+  justify-content:space-between;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+.top .left{
+  display: flex;
+  flex-direction: row;
+}
+.top .left>image{
+  width: 80rpx;
+  height:76rpx;
+}
+.top .left .warp-txt{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.top .left text:nth-child(2){
+  font-size: 24rpx;
+  color: rgb(0,0,0,0.4);
+
+}
+.top .rig{
+  background-color: #FE5353;
+  color: white;
+  width: 140rpx;
+  height: 65rpx;
+  font-weight: bold;
+  font-size: 24rpx;
+  text-align: center;
+  border-radius: 32rpx;
+  line-height: 65rpx;
+}

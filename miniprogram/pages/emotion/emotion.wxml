@@ -1,0 +1,6 @@
+<import src="../../template/pageContent/pageContent"></import>
+<header></header>
+
+<template is="mainContent" data="{{listAll,indexTitle,ListAll,threeList,colorIndex,title}}"></template>
+
+
